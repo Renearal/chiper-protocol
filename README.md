@@ -17,7 +17,7 @@ A privacy-preserving ETH vault powered by Zama's Fully Homomorphic Encryption (f
 ---
 
 ### Smart Contract (Sepolia Testnet)
-**[0xA40f7F77497d4519285cfcC30A7876d74FB80f03](https://sepolia.etherscan.io/address/0xA40f7F77497d4519285cfcC30A7876d74FB80f03)**
+**[0x6ab18D978B3B54535DD5c8EeE372CBCdC20812b5](https://sepolia.etherscan.io/address/0x6ab18D978B3B54535DD5c8EeE372CBCdC20812b5)**
 
 ### Live Demo
 **[https://chiper-protocol-review.vercel.app/](https://chiper-protocol-review.vercel.app/)**

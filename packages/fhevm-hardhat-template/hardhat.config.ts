@@ -25,7 +25,7 @@ const config: HardhatUserConfig = {
     deployer: 0,
   },
   etherscan: {
-    apiKey: ETHERSCAN_API_KEY, // V2 format - single API key
+    apiKey: ETHERSCAN_API_KEY,
   },
   gasReporter: {
     currency: "USD",
@@ -43,7 +43,7 @@ const config: HardhatUserConfig = {
     sepolia: {
       accounts: PRIVATE_KEY !== "0x0000000000000000000000000000000000000000000000000000000000000000" ? [PRIVATE_KEY] : [],
       chainId: 11155111,
-      url: `https://sepolia.infura.io/v3/${INFURA_API_KEY}`,
+      url: INFURA_API_KEY ? `https://sepolia.infura.io/v3/${INFURA_API_KEY}` : "https://ethereum-sepolia-rpc.publicnode.com",
     },
   },
   paths: {
@@ -56,12 +56,8 @@ const config: HardhatUserConfig = {
     version: "0.8.27",
     settings: {
       metadata: {
-        // Not including the metadata hash
-        // https://github.com/paulrberg/hardhat-template/issues/31
         bytecodeHash: "none",
       },
-      // Disable the optimizer when debugging
-      // https://hardhat.org/hardhat-network/#solidity-optimizer-support
       optimizer: {
         enabled: true,
         runs: 800,

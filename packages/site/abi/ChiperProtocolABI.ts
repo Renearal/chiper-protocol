@@ -22,11 +22,6 @@ export const ChiperProtocolABI = {
     },
     {
       "inputs": [],
-      "name": "HandlesAlreadySavedForRequestID",
-      "type": "error"
-    },
-    {
-      "inputs": [],
       "name": "InsufficientVaultBalance",
       "type": "error"
     },
@@ -42,12 +37,12 @@ export const ChiperProtocolABI = {
     },
     {
       "inputs": [],
-      "name": "InvalidRecipient",
+      "name": "InvalidKMSSignatures",
       "type": "error"
     },
     {
       "inputs": [],
-      "name": "NoHandleFoundForRequestID",
+      "name": "InvalidRecipient",
       "type": "error"
     },
     {
@@ -67,11 +62,6 @@ export const ChiperProtocolABI = {
     },
     {
       "inputs": [],
-      "name": "RequestIdConflict",
-      "type": "error"
-    },
-    {
-      "inputs": [],
       "name": "RequestNotFound",
       "type": "error"
     },
@@ -86,17 +76,9 @@ export const ChiperProtocolABI = {
       "type": "error"
     },
     {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": true,
-          "internalType": "uint256",
-          "name": "requestID",
-          "type": "uint256"
-        }
-      ],
-      "name": "DecryptionFulfilled",
-      "type": "event"
+      "inputs": [],
+      "name": "ZamaProtocolUnsupported",
+      "type": "error"
     },
     {
       "anonymous": false,
@@ -115,6 +97,25 @@ export const ChiperProtocolABI = {
         }
       ],
       "name": "Deposit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bytes32[]",
+          "name": "handlesList",
+          "type": "bytes32[]"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "abiEncodedCleartexts",
+          "type": "bytes"
+        }
+      ],
+      "name": "PublicDecryptionVerified",
       "type": "event"
     },
     {
@@ -187,6 +188,12 @@ export const ChiperProtocolABI = {
           "internalType": "uint256",
           "name": "requestId",
           "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "amountHandle",
+          "type": "bytes32"
         },
         {
           "indexed": false,
@@ -281,6 +288,19 @@ export const ChiperProtocolABI = {
     },
     {
       "inputs": [],
+      "name": "confidentialProtocolId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
       "name": "depositETH",
       "outputs": [],
       "stateMutability": "payable",
@@ -297,6 +317,29 @@ export const ChiperProtocolABI = {
         }
       ],
       "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "requestId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint128",
+          "name": "clearAmount",
+          "type": "uint128"
+        },
+        {
+          "internalType": "bytes",
+          "name": "decryptionProof",
+          "type": "bytes"
+        }
+      ],
+      "name": "finalizeWithdrawal",
+      "outputs": [],
+      "stateMutability": "nonpayable",
       "type": "function"
     },
     {
@@ -385,6 +428,11 @@ export const ChiperProtocolABI = {
           "internalType": "uint256",
           "name": "timestamp",
           "type": "uint256"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "amountHandle",
+          "type": "bytes32"
         }
       ],
       "stateMutability": "view",
@@ -420,42 +468,6 @@ export const ChiperProtocolABI = {
         }
       ],
       "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "requestId",
-          "type": "uint256"
-        },
-        {
-          "internalType": "bytes",
-          "name": "cleartexts",
-          "type": "bytes"
-        },
-        {
-          "internalType": "bytes",
-          "name": "signatures",
-          "type": "bytes"
-        }
-      ],
-      "name": "onWithdrawCallback",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "inputs": [],
-      "name": "protocolId",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "stateMutability": "pure",
       "type": "function"
     },
     {

@@ -96,11 +96,12 @@ export const SimpleVault = () => {
       await vault.deposit(amount);
       showStatus("success", `Deposited ${depositAmount} ETH successfully!`);
       setDepositAmount("");
-    } catch (e: any) {
-      if (e?.code === "ACTION_REJECTED") {
+    } catch (e: unknown) {
+      const error = e as { code?: string; message?: string };
+      if (error?.code === "ACTION_REJECTED") {
         showStatus("error", "Transaction cancelled");
       } else {
-        showStatus("error", e?.message || "Deposit failed");
+        showStatus("error", error?.message || "Deposit failed");
       }
     } finally {
       setIsLoading(false);
@@ -144,11 +145,12 @@ export const SimpleVault = () => {
       setWithdrawAmount("");
 
       setTimeout(() => vault.refreshBalanceHandle(), 3000);
-    } catch (e: any) {
-      if (e?.code === "ACTION_REJECTED") {
+    } catch (e: unknown) {
+      const error = e as { code?: string; message?: string };
+      if (error?.code === "ACTION_REJECTED") {
         showStatus("error", "Transaction cancelled");
       } else {
-        showStatus("error", e?.message || "Withdrawal failed");
+        showStatus("error", error?.message || "Withdrawal failed");
       }
     } finally {
       setIsLoading(false);

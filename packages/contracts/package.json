@@ -7,10 +7,10 @@
     "npm": ">=7.0.0"
   },
   "license": "MIT",
-  "homepage": "https://github.com/ironhex21/Chiper-Protocol",
+  "homepage": "https://github.com/Renearal/chiper-protocol",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ironhex21/Chiper-Protocol.git"
+    "url": "git+https://github.com/Renearal/chiper-protocol.git"
   },
   "keywords": [
     "fhevm",

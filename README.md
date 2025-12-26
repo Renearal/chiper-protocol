@@ -184,9 +184,9 @@ By following these steps, you can ensure that MetaMask syncs correctly with your
 
 ### Smart Contracts
 
-- **`packages/fhevm-hardhat-template/contracts/PrivateVault.sol`**: Main vault contract with encrypted balance storage
-- **`packages/fhevm-hardhat-template/contracts/MockERC20.sol`**: Mock token for testing (mUSDT)
-- **`packages/fhevm-hardhat-template/deploy/deployPrivateVault.ts`**: Deployment script
+- **`packages/contracts/contracts/ChiperProtocol.sol`**: Main vault contract with encrypted balance storage
+- **`packages/contracts/contracts/MockERC20.sol`**: Mock token for testing (mUSDT)
+- **`packages/contracts/deploy/deployChiperProtocol.ts`**: Deployment script
 
 ### Frontend
 

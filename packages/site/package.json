@@ -3,10 +3,10 @@
   "version": "0.3.0",
   "private": true,
   "license": "MIT",
-  "homepage": "https://github.com/ironhex21/Chiper-Protocol",
+  "homepage": "https://github.com/Renearal/chiper-protocol",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ironhex21/Chiper-Protocol.git"
+    "url": "git+https://github.com/Renearal/chiper-protocol.git"
   },
   "scripts": {
     "clean": "rimraf .next && npm run generate-abi",

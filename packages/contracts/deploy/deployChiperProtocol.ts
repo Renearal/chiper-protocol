@@ -17,7 +17,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     args: [],
     log: true,
     waitConfirmations: chainName === "sepolia" ? 5 : 1,
-    contract: "contracts/PrivateVault.sol:ChiperProtocol",
+    contract: "contracts/ChiperProtocol.sol:ChiperProtocol",
   });
 
   console.log(`ChiperProtocol deployed at: ${vaultContract.address}`);

@@ -168,7 +168,7 @@ export const SimpleVault = () => {
     <div className="max-w-md mx-auto p-4 space-y-6">
       {/* Header */}
       <div className="text-center py-6">
-        <h1 className="text-3xl font-bold text-gray-900">Private Vault</h1>
+        <h1 className="text-3xl font-bold text-gray-900">Chiper Protocol</h1>
         <p className="text-gray-500 mt-1">FHE-Encrypted ETH Storage</p>
         <p className="text-xs text-gray-400 mt-2">Powered by Zama fhEVM</p>
       </div>

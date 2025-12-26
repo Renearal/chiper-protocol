@@ -1,4 +1,4 @@
-# Private Vault - FHE Encrypted ETH Storage
+# Chiper Protocol - FHE Encrypted ETH Vault
 
 A privacy-preserving ETH vault powered by Zama's Fully Homomorphic Encryption (fhEVM). Store and manage ETH with encrypted balances on-chain.
 

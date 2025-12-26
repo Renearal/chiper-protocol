@@ -1,7 +1,7 @@
 import { run } from "hardhat";
 
 async function main() {
-  const contractAddress = "0xA40f7F77497d4519285cfcC30A7876d74FB80f03"; // ChiperProtocol deployment Nov 4, 2025
+  const contractAddress = "0x6ab18D978B3B54535DD5c8EeE372CBCdC20812b5"; // ChiperProtocol verified
   
   console.log("🔍 Verifying ChiperProtocol contract on Etherscan...");
   console.log("📍 Address:", contractAddress);
@@ -12,7 +12,7 @@ async function main() {
     await run("verify:verify", {
       address: contractAddress,
       constructorArguments: [], // ChiperProtocol has no constructor arguments
-      contract: "contracts/PrivateVault.sol:ChiperProtocol",
+      contract: "contracts/ChiperProtocol.sol:ChiperProtocol",
     });
     
     console.log("");
@@ -39,7 +39,7 @@ async function main() {
       console.error(error.message);
       console.error("");
       console.error("💡 Try manual verification:");
-      console.error("   1. Run: npx hardhat flatten contracts/PrivateVault.sol > PrivateVault_flat.sol");
+      console.error("   1. Run: npx hardhat flatten contracts/ChiperProtocol.sol > ChiperProtocol_flat.sol");
       console.error("   2. Visit: https://sepolia.etherscan.io/verifyContract");
       console.error("   3. Upload flattened source code");
     }

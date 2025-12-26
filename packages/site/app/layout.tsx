@@ -4,8 +4,8 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Private Vault - FHE Encrypted ETH",
-  description: "Private ETH storage powered by Zama fhEVM",
+  title: "Chiper Protocol - FHE Encrypted ETH",
+  description: "Chiper Protocol - Encrypted ETH storage powered by Zama fhEVM",
 };
 
 export default async function RootLayout({

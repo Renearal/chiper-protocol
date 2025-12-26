@@ -38,7 +38,7 @@ await vault.depositETH({ value: amount });
 
 **2. Smart Contract Processing**
 ```solidity
-// Contract: PrivateVault.sol (line 31-47)
+// Contract: ChiperProtocol.sol (line 31-47)
 function depositETH() external payable {
     require(msg.value > 0, "No ETH");
     require(msg.value <= type(uint128).max, "Too large");
@@ -249,7 +249,7 @@ await tx.wait();
 
 **3. Contract Processes Request (PRIVATE)**
 ```solidity
-// Contract: PrivateVault.sol (line 54-90)
+// Contract: ChiperProtocol.sol (line 54-90)
 function requestWithdraw(
     address payable to,
     externalEuint128 extAmt,
@@ -294,7 +294,7 @@ function requestWithdraw(
 
 **4. Oracle Decrypts & Calls Back**
 ```solidity
-// Contract: PrivateVault.sol (line 93-114)
+// Contract: ChiperProtocol.sol (line 93-114)
 function onWithdraw(
     uint256 requestId,
     bytes calldata cleartexts,

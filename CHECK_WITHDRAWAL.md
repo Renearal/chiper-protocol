@@ -158,3 +158,4 @@ https://discord.com/invite/zama
 4. ⏳ ETH will arrive in 5-10 minutes
 
 **Be patient - this is how FHE private withdrawals work!** 🚀
+

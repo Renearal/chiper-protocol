@@ -2,13 +2,13 @@
 pragma solidity ^0.8.24;
 
 import {FHE, euint128, ebool, externalEuint128} from "@fhevm/solidity/lib/FHE.sol";
-import {SepoliaConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
+import {EthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 import {ReentrancyGuard} from "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
 /// @title Chiper Protocol - Trustless Confidential Transfer Vault
 /// @notice Encrypted user balances with FHE-powered confidential withdrawals
 /// @dev TVL is publicly decryptable for transparency; no owner/emergency controls
-contract ChiperProtocol is SepoliaConfig, ReentrancyGuard {
+contract ChiperProtocol is EthereumConfig, ReentrancyGuard {
     /* ============================== STATE ============================== */
 
     mapping(address => euint128) private _balances; // encrypted balance per user (PRIVATE)

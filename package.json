@@ -9,6 +9,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "overrides": {
+    "zksync-web3": "npm:zksync-ethers@^5.0.0"
+  },
   "scripts": {
     "postinstall": "node ./scripts/postinstall.mjs",
     "build": "cd packages/site && npm run build",

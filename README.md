@@ -1,14 +1,26 @@
-# Chiper Protocol - Confidential Transfer
+# Private Vault - FHE Encrypted ETH Storage
 
-Chiper Protocol is Confidential Transfer protocol with Fully Homomorphic Encryption. Keep your balance private while maintaining full on-chain verifiability powered by Zama FHEVM.
+A privacy-preserving ETH vault powered by Zama's Fully Homomorphic Encryption (fhEVM). Store and manage ETH with encrypted balances on-chain.
+
+## Tech Stack
+
+| Component | Version |
+|-----------|---------|
+| @fhevm/solidity | 0.9.0-1 |
+| @zama-fhe/relayer-sdk | 0.3.0-8 |
+| @fhevm/hardhat-plugin | 0.2.0-0 |
+| Network Config | EthereumConfig |
+| Solidity | 0.8.24+ |
+| Next.js | 15.x |
+| React | 19.x |
 
 ---
 
-### 📝 **Smart Contract (Sepolia Testnet)**
-## **[0xA40f7F77497d4519285cfcC30A7876d74FB80f03](https://sepolia.etherscan.io/address/0xA40f7F77497d4519285cfcC30A7876d74FB80f03)** ✅ Verified
+### Smart Contract (Sepolia Testnet)
+**[0xA40f7F77497d4519285cfcC30A7876d74FB80f03](https://sepolia.etherscan.io/address/0xA40f7F77497d4519285cfcC30A7876d74FB80f03)**
 
-### 🌐 **Website Demo**
-## **[https://chiperprotocol.vercel.app/](https://chiperprotocol.vercel.app/)**
+### Live Demo
+**[https://chiper-protocol-review.vercel.app/](https://chiper-protocol-review.vercel.app/)**
 
 ---
 

@@ -463,3 +463,4 @@ export const usePrivateVault = (parameters: {
     refreshBalanceHandle,
   };
 };
+

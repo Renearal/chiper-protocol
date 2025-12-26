@@ -48,3 +48,4 @@ child.on('close', (code) => {
   }
   process.exit(0);
 });
+

@@ -7,3 +7,4 @@ task("accounts", "Prints the list of accounts", async (_taskArgs, hre) => {
     console.log(`${account.address}`);
   }
 });
+

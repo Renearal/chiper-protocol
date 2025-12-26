@@ -182,3 +182,4 @@ task("task:decrement", "Calls the decrement() function of FHECounter Contract")
 
     console.log(`FHECounter decrement(${value}) succeeded!`);
   });
+

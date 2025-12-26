@@ -35,3 +35,4 @@ export default func;
 
 func.id = "deploy_chiperProtocol";
 func.tags = ["ChiperProtocol"];
+

@@ -64,3 +64,5 @@ tmp*
 .cache
 .vercel
 .env*.local
+.env
+

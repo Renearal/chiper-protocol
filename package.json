@@ -25,3 +25,4 @@
     "flatten": "npx -w ./packages/fhevm-hardhat-template hardhat flatten contracts/PrivateVault.sol > PrivateVault_flat.sol"
   }
 }
+

@@ -24,13 +24,13 @@
     "hardhat"
   ],
   "dependencies": {
-    "@fhevm/solidity": "0.9.0-1",
+    "@fhevm/solidity": "0.9.1",
     "@openzeppelin/contracts": "^5.4.0",
     "encrypted-types": "^0.0.4"
   },
   "devDependencies": {
-    "@fhevm/hardhat-plugin": "0.2.0-0",
-    "@fhevm/mock-utils": "0.2.0-0",
+    "@fhevm/hardhat-plugin": "0.3.0-2",
+    "@fhevm/mock-utils": "0.3.0-2",
     "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
     "@nomicfoundation/hardhat-ethers": "^3.1.0",
     "@nomicfoundation/hardhat-network-helpers": "^1.1.0",

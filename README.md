@@ -6,10 +6,10 @@ A privacy-preserving ETH vault powered by Zama's Fully Homomorphic Encryption (f
 
 | Component | Version |
 |-----------|---------|
-| @fhevm/solidity | 0.9.0-1 |
+| @fhevm/solidity | 0.9.1 |
 | @zama-fhe/relayer-sdk | 0.3.0-8 |
-| @fhevm/hardhat-plugin | 0.2.0-0 |
-| Network Config | EthereumConfig |
+| @fhevm/hardhat-plugin | 0.3.0-2 |
+| Network Config | ZamaEthereumConfig |
 | Solidity | 0.8.24+ |
 | Next.js | 15.x |
 | React | 19.x |

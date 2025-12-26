@@ -22,6 +22,9 @@ A privacy-preserving ETH vault powered by Zama's Fully Homomorphic Encryption (f
 ### Live Demo
 **[https://chiper-protocol-review.vercel.app/](https://chiper-protocol-review.vercel.app/)**
 
+### Demo Video
+[![Chiper Protocol Demo](https://img.youtube.com/vi/Pk7bFLDk8GI/maxresdefault.jpg)](https://www.youtube.com/watch?v=Pk7bFLDk8GI)
+
 ---
 
 ## 🔐 Features
